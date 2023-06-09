@@ -1,0 +1,138 @@
+.sidenav {
+	height: 100%;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	right: 0;
+	overflow: hidden;
+	transition: all 0.3s cubic-bezier(0, 1.03, 0.65, 1) 0s;
+	width: 33rem;
+	display: grid;
+	grid-auto-flow: row;
+	color: var(--font-color);
+	padding: 2rem 3rem 2rem 6rem;
+}
+
+.sidenav::before {
+	content: '';
+	display: block;
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	right: 0;
+	width: 30rem;
+	margin-right: -6vh;
+	height: 100%;
+	background: var(--bg-color);
+	transform: skewX(7deg);
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.sidenav_header {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+	z-index: 100;
+	gap: 2rem;
+}
+
+.sidenav_header > div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.sidenav_header > div > a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.sidenav_header_user_image {
+	border-radius: 50%;
+	height: 2rem;
+	width: 2rem;
+}
+
+.sidenav_header_user_name {
+	text-transform: uppercase;
+}
+
+.sidenav_menu {
+	padding-right: 2rem;
+	justify-content: center;
+	display: flex;
+	z-index: 100;
+	height: 60vh;
+	align-items: flex-end;
+	flex-direction: column;
+	line-height: 1.8;
+	font-size: 1.7rem;
+}
+
+.sidenav_menu_item {
+	/* font-size: clamp(3rem, 8vw, 8rem); */
+	display: block;
+	padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+	transition: opacity 0.35s ease-in-out 0s;
+}
+
+.sidenav_footer {
+	padding-right: 2rem;
+	justify-content: flex-start;
+	display: flex;
+	z-index: 100;
+	height: 60vh;
+	align-items: flex-end;
+	flex-direction: column;
+	line-height: 1.5;
+	font-size: 0.9rem;
+}
+
+.sidenav_footer_item {
+	/* font-size: clamp(3rem, 8vw, 8rem); */
+	display: block;
+	padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+	transition: opacity 0.35s ease-in-out 0s;
+}
+
+.sidenav_footer_logout {
+	color: red;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+	.sidenav {
+		width: 100vw;
+	}
+
+	.sidenav::before {
+		margin-right: 0;
+		transform: unset;
+		width: 100vw;
+	}
+
+	.sidenav_header > div {
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	.sidenav_menu {
+		align-items: flex-start;
+		font-size: 2.5rem;
+	}
+
+	.sidenav_footer {
+		align-items: flex-start;
+		font-size: 1rem;
+	}
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+	.grid {
+		grid-template-columns: repeat(2, 50%);
+	}
+}

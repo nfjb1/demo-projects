@@ -1,0 +1,37 @@
+[
+	{
+		"id": 1,
+		"date": "04.05.2023",
+		"title": "Track Day",
+		"description": "Join us for an adrenaline-packed day at the race track, where members can bring their exclusive cars to test their speed and handling in a safe and controlled environment. Experienced instructors will provide coaching to help you improve your driving skills.",
+		"levels": ["gold"]
+	},
+	{
+		"id": 2,
+		"date": "05.07.2023",
+		"title": "Car Show",
+		"description": "Showcase your exclusive car to the public and other car enthusiasts. Join us for a day of fun, as we admire the beauty and uniqueness of each car. Various categories and prizes will be awarded.",
+		"levels": ["gold"]
+	},
+	{
+		"id": 3,
+		"date": "01.08.2023",
+		"title": "Road Rally",
+		"description": "Join us for a scenic drive through the countryside, stopping at various checkpoints along the way. This event can be timed, and participants can compete for the fastest time or highest score.",
+		"levels": ["silver", "gold"]
+	},
+	{
+		"id": 4,
+		"date": "16.08.2023",
+		"title": "Concours d'Elegance",
+		"description": "Join us for an elegant evening where exclusive cars will be displayed in a formal setting. Judges will evaluate the cars based on criteria such as condition, originality, and presentation.",
+		"levels": ["gold"]
+	},
+	{
+		"id": 5,
+		"date": "09.10.2023",
+		"title": "Charity Drive",
+		"description": "Join us for a long-distance drive to raise awareness and funds for a worthy cause. Use your exclusive car to make a difference and give back to the community.",
+		"levels": ["silver", "gold"]
+	}
+]

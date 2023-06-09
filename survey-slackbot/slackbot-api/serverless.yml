@@ -1,0 +1,19 @@
+org: XXXX
+app: slackbot-survey-api
+service: slackbot-survey-api
+frameworkVersion: '3'
+
+provider:
+    name: aws
+    timeout: 60
+    environment:
+        RANDOM_ID: ${env:RANDOM_ID}
+        SLACK_BOT_TOKEN: ${env:SLACK_BOT_TOKEN}
+        MONGO_DB_PASSWORD: ${env:MONGO_DB_PASSWORD}
+    runtime: nodejs14.x
+
+functions:
+    api:
+        handler: handler.handler
+        events:
+            - httpApi: '*'

@@ -1,0 +1,9 @@
+.serverless
+*.pyc
+*.pyo
+bin
+lib
+include
+node_modules
+package-lock.json
+pyvenv.cfg

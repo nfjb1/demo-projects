@@ -1,0 +1,30 @@
+[
+	{
+		"id": 1,
+		"title": "New Event Alert",
+		"description": "A new car show has been added to the events calendar. Click here to see more details and RSVP.",
+		"read": false,
+		"date": "2023-02-25T09:30:00Z"
+	},
+	{
+		"id": 2,
+		"title": "Membership Renewal Reminder",
+		"description": "Your membership is about to expire in 7 days. Renew your membership now to continue enjoying all the benefits of our car club.",
+		"read": false,
+		"date": "2023-02-24T16:45:00Z"
+	},
+	{
+		"id": 3,
+		"title": "Photo Contest Winner Announced",
+		"description": "Congratulations to JohnDoe for winning the car club's photo contest! Check out his winning photo and the other amazing entries.",
+		"read": false,
+		"date": "2023-02-22T10:00:00Z"
+	},
+	{
+		"id": 4,
+		"title": "New Forum Topic",
+		"description": "A new discussion topic has been added to the forums. Join the conversation and share your thoughts with other car enthusiasts.",
+		"read": false,
+		"date": "2023-02-21T14:20:00Z"
+	}
+]

@@ -1,0 +1,166 @@
+.login_form {
+	padding-bottom: 1rem;
+}
+
+.login_page {
+	background: radial-gradient(circle, rgba(30, 34, 37, 1) 0%, rgba(51, 56, 59, 1) 100%);
+
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+}
+
+.login_box {
+	display: flex;
+	background: var(--bg-color);
+	border-radius: 2rem;
+	box-shadow: var(--box-shadow);
+	/* position: absolute; */
+	width: calc(100vw - 4rem);
+	min-height: calc(100vh - 4rem);
+	justify-content: flex-start;
+	align-items: center;
+	max-width: 128rem;
+}
+
+.login_box > .svg {
+	width: 50%;
+}
+
+.login_box > .svg > .login_svg {
+	width: auto;
+	margin: -1.5rem 0 1.5rem -1px;
+	height: 100%;
+}
+
+.login_box > .form {
+	padding: 2rem 3rem;
+	min-width: 20rem;
+	max-width: 50rem;
+	flex-basis: 50%;
+}
+
+.form_wrapper > .header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+}
+
+.top_row {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.form_group {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+
+.lineH {
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid var(--bg-color-invert);
+	line-height: 0.1em;
+	margin: 10px 0 20px;
+	margin-top: 4rem;
+	margin-bottom: 3rem;
+}
+
+.lineH span {
+	background: var(--bg-color);
+	padding: 0 10px;
+}
+
+.social_media_login_wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.sign_in_button {
+	white-space: nowrap;
+	padding: 1rem 2rem 0.8rem 2rem;
+	display: flex;
+	width: 95%;
+	border-radius: 5px;
+	justify-content: center;
+	-webkit-user-select: none; /* Chrome all / Safari all */
+	-moz-user-select: none; /* Firefox all */
+	-ms-user-select: none; /* IE 10+ */
+	user-select: none; /* Likely future */
+	margin: 1rem;
+	margin: auto;
+	border-radius: 30px;
+	-webkit-transition: 0.2s ease-in-out !important;
+	transition: 0.2s ease-in-out !important;
+}
+
+.sign_in_button > img {
+	font-size: 14px;
+	vertical-align: middle;
+	width: 18px;
+}
+
+#google_sign_in_button {
+	background: var(--input-bg-color);
+}
+#google_sign_in_button:hover {
+	background: var(--bg-color-invert);
+}
+
+#facebook_sign_in_button {
+	background: #3b5998;
+	color: white;
+}
+#facebook_sign_in_button:hover {
+	background: #0f2027;
+}
+
+.form_options {
+	display: flex;
+}
+
+.bottom_row {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.confirmation_wrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 3rem;
+	padding: 3rem;
+}
+
+/* Tablet and Smaller Desktop */
+@media (max-width: 1120px) {
+	.login_box {
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.svg {
+		display: none;
+	}
+
+	.confirmation_wrapper {
+		flex-direction: column;
+	}
+}

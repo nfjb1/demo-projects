@@ -1,0 +1,103 @@
+.asset_box_wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 3rem 3rem;
+	/* padding: 14rem; */
+}
+
+.filter_wrapper {
+	margin: 2rem 0;
+	padding: 2rem;
+	border-bottom: 1px solid rgb(0 0 0 / 12%);
+	border-radius: 0.5rem;
+	overflow-y: auto;
+}
+
+.filter_wrapper h3 {
+	font-size: 1.3rem;
+	margin: 0;
+	margin-bottom: 1rem;
+}
+
+.filter_button_wrapper {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.filter_button {
+	all: unset;
+	font-size: 0.9rem;
+	background-color: #efefef;
+	padding: 0.5rem 0.8rem;
+	border-radius: 0.7rem;
+	min-width: 100px;
+	text-align: center;
+	cursor: pointer;
+	color: black;
+}
+
+/* .filter_button:focus,
+.filter_button:checked {
+	outline: 1px solid black;
+} */
+
+.active {
+	background-color: rgb(29, 29, 29);
+	color: white;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+	.asset_box_wrapper {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		gap: 3rem 3rem;
+		/* padding: 2rem; */
+	}
+
+	.filter_wrapper {
+		padding: 2rem 0;
+	}
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+	.asset_box_wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		gap: 3rem 3rem;
+		/* padding: 2rem; */
+	}
+}
+
+.loader {
+	background: linear-gradient(0.25turn, transparent, #fff, transparent),
+		linear-gradient(#ddd, #ddd), linear-gradient(#ddd, #ddd),
+		linear-gradient(#ddd, #ddd), linear-gradient(#ddd, #ddd),
+		linear-gradient(#ddd, #ddd), linear-gradient(#ddd, #ddd),
+		linear-gradient(#ddd, #ddd), linear-gradient(#ddd, #ddd);
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-size: 28rem 100%, 100% 19rem, 100% 4rem, 11rem 1.8rem, 19rem 2rem,
+		25rem 2rem, 25rem 2rem, 25rem 2rem, 25rem 2rem;
+	background-position: -30rem 0rem, 0rem 0rem, 0rem 20rem, 1rem 25rem, 1rem 28rem,
+		1rem 31rem, 1rem 34rem, 1rem 37rem, 1rem 40rem;
+	animation: loading 1s infinite;
+
+	border-radius: 2rem;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+	flex-direction: column;
+	height: 45rem;
+}
+
+@keyframes loading {
+	to {
+		background-position: 30rem 0rem, 0rem 0rem, 0rem 20rem, 1rem 25rem, 1rem 28rem,
+			1rem 31rem, 1rem 34rem, 1rem 37rem, 1rem 40rem;
+	}
+}

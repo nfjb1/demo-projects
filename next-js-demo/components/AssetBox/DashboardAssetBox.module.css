@@ -1,0 +1,14 @@
+.box {
+	display: flex;
+	gap: 2rem;
+}
+
+.box > img {
+	width: 20rem;
+	max-height: 20rem;
+	-webkit-object-fit: cover;
+	object-fit: cover;
+	filter: contrast(0.85) sepia(0.07);
+
+	border-radius: 1rem;
+}
